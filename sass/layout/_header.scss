@@ -18,6 +18,11 @@ header {
     color: $color-white;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
+
+    &:link, &:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
   }
 
   .main-nav {
@@ -26,7 +31,6 @@ header {
       display: flex;
       gap: 3.2rem;
       list-style: none;
-
     }
 
     .nav-cta {

@@ -94,6 +94,7 @@
 
     .about-paragraph {
       color: $color-white;
+      line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
       padding: 0 3.2rem;
@@ -294,6 +295,71 @@
     }
 
   }
+}
 
+.section-contact {
+  background-color: #25262A;
+  padding: 4.8rem 0 12.8rem;
 
+  .container {
+    max-width: 140rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+
+    .cta {
+
+      .heading-secondary {
+        font-weight: 900;
+        font-size: 3.6rem;
+        color: $color-primary-green;
+        position: relative;
+        margin: 4rem 0 1.5rem;
+      }
+
+      .cta-text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        color: $color-white;
+        margin-bottom: 1.8rem;
+      }
+
+      .cta-form {
+        .cta-form-input {
+          width: 50%;
+          padding: 1.2rem;
+          font-size: 1.4rem;
+          font-family: inherit;
+          border: none;
+          margin-bottom: 2rem;
+          background-color: $color-grey-extra-light;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+          &-textarea {
+            height: 15rem;
+            resize: none;
+          }
+        }
+
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: 600;
+          padding: 1.6rem 3.2rem;
+          border: none;
+          cursor: pointer;
+          font-family: inherit;
+          transition: all 0.3s;
+          text-transform: uppercase;
+        }
+
+        .btn--form {
+          background-color: $color-primary-green;
+          color: $color-primary-dark;
+          align-self: end;
+          padding: 1.2rem;
+        }
+      }
+    }
+  }
 }

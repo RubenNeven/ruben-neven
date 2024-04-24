@@ -13,7 +13,7 @@
 </head>
 <body>
 <header>
-    <a class="logo"><strong>Ruben</strong> Neven</a>
+    <a href="#home" class="logo"><strong>Ruben</strong> Neven</a>
     <nav class="main-nav">
         <ul class="main-nav-list">
             <li>
@@ -26,7 +26,7 @@
                 <a class="main-nav-link" href="#experience">Experience</a>
             </li>
             <li>
-                <a class="main-nav-link nav-cta" href="#">Contact me</a>
+                <a class="main-nav-link nav-cta" href="#contact">Contact me</a>
             </li>
         </ul>
     </nav>
@@ -51,7 +51,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="mailto:rubenneven@gmail.com">
                             <ion-icon name="mail-outline"></ion-icon>
                         </a>
                     </li>
@@ -180,6 +180,29 @@
             </div>
 
             <div></div>
+        </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+        <div class="container">
+            <div class="cta">
+                <h2 class="heading-secondary">Contact</h2>
+                <p class="cta-text">Get in touch with me!</p>
+                <form class="cta-form">
+                    <div>
+                        <input class="cta-form-input" type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input class="cta-form-input" type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea class="cta-form-input cta-form-input-textarea" id="message" name="email" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn--form">
+                        Send message
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 </main>

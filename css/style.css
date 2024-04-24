@@ -31,6 +31,9 @@ header {
     color: #FFF;
     font-family: "Inter", sans-serif;
     font-size: 2rem; }
+    header .logo:link, header .logo:visited {
+      text-decoration: none;
+      color: #FFF; }
   header .main-nav-list {
     display: flex;
     gap: 3.2rem;
@@ -117,6 +120,7 @@ header {
         border-radius: 5px; }
     .section-about .container .about-paragraph {
       color: #FFF;
+      line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
       padding: 0 3.2rem; }
@@ -234,3 +238,50 @@ header {
       padding-left: 1rem; }
     .section-experience .container .description-left {
       padding-right: 1rem; }
+
+.section-contact {
+  background-color: #25262A;
+  padding: 4.8rem 0 12.8rem; }
+  .section-contact .container {
+    max-width: 140rem;
+    padding: 0 3.2rem;
+    margin: 0 auto; }
+    .section-contact .container .cta .heading-secondary {
+      font-weight: 900;
+      font-size: 3.6rem;
+      color: #65F3AF;
+      position: relative;
+      margin: 4rem 0 1.5rem; }
+    .section-contact .container .cta .cta-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      color: #FFF;
+      margin-bottom: 1.8rem; }
+    .section-contact .container .cta .cta-form .cta-form-input {
+      width: 50%;
+      padding: 1.2rem;
+      font-size: 1.4rem;
+      font-family: inherit;
+      border: none;
+      margin-bottom: 2rem;
+      background-color: #ebebec;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+      .section-contact .container .cta .cta-form .cta-form-input-textarea {
+        height: 15rem;
+        resize: none; }
+    .section-contact .container .cta .cta-form .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding: 1.6rem 3.2rem;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.3s;
+      text-transform: uppercase; }
+    .section-contact .container .cta .cta-form .btn--form {
+      background-color: #65F3AF;
+      color: #2D2E32;
+      align-self: end;
+      padding: 1.2rem; }
