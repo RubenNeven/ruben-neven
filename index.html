@@ -188,17 +188,17 @@
             <div class="cta">
                 <h2 class="heading-secondary">Contact</h2>
                 <p class="cta-text">Get in touch with me!</p>
-                <form class="cta-form">
+                <form class="cta-form" id="contact-form">
                     <div>
-                        <input class="cta-form-input" type="text" id="name" name="name" placeholder="Name">
+                        <input required class="cta-form-input" type="text" id="name" name="name" placeholder="Name">
                     </div>
                     <div>
-                        <input class="cta-form-input" type="text" id="email" name="email" placeholder="Email">
+                        <input required class="cta-form-input" type="text" id="email" name="email" placeholder="Email">
                     </div>
                     <div>
-                        <textarea class="cta-form-input cta-form-input-textarea" id="message" name="email" placeholder="Message"></textarea>
+                        <textarea required class="cta-form-input cta-form-input-textarea" id="message" name="message" placeholder="Message"></textarea>
                     </div>
-                    <button class="btn btn--form">
+                    <button type="submit" class="btn btn--form">
                         Send message
                     </button>
                 </form>
@@ -206,7 +206,8 @@
         </div>
     </section>
 </main>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
