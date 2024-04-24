@@ -1,0 +1,16 @@
+{
+  "name": "ruben-neven",
+  "version": "1.0.0",
+  "description": "Ruben Neven Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "nodemon --watch sass -e scss -x \"npm run compile:sass:now\" ",
+    "compile:sass:now": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Ruben Neven",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
