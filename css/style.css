@@ -94,7 +94,7 @@ header {
 .section-about {
   background-color: #25262A;
   padding: 9.6rem 0;
-  height: 100vh; }
+  min-height: 100vh; }
   .section-about .container {
     max-width: 120rem;
     padding: 0 3.2rem;
@@ -138,7 +138,8 @@ header {
       font-weight: 400;
       font-size: 1.6rem;
       margin-bottom: 1rem;
-      line-height: 1.8; }
+      line-height: 1.8;
+      text-align: justify; }
     .section-about .about-content .skills {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -190,7 +191,7 @@ header {
       column-gap: 2rem;
       align-self: center; }
       .section-experience .container .experience-container:hover {
-        transform: scale(1.3); }
+        transform: scale(1.1); }
       .section-experience .container .experience-container .year-logo {
         white-space: nowrap;
         display: flex;

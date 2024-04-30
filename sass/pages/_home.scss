@@ -59,7 +59,7 @@
 .section-about {
   background-color: #25262A;
   padding: 9.6rem 0;
-  height: 100vh;
+  min-height: 100vh;
 
   .container {
     max-width: 120rem;
@@ -121,6 +121,7 @@
         font-size: 1.6rem;
         margin-bottom: 1rem;
         line-height: 1.8;
+        text-align: justify;
       }
     }
 
@@ -208,7 +209,7 @@
       align-self: center;
 
       &:hover{
-        transform: scale(1.3);
+        transform: scale(1.1);
       }
 
       .year-logo{
@@ -307,7 +308,7 @@
     margin: 0 auto;
 
     .cta {
-
+      //padding-left: 30rem;
       .heading-secondary {
         font-weight: 900;
         font-size: 3.6rem;
