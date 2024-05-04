@@ -6,7 +6,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700; }
 
 html {
@@ -18,7 +18,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #2D2E32;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,45 +28,46 @@ header {
   text-transform: uppercase;
   font-size: 1.6rem; }
   header .logo {
-    color: #FFF;
+    color: #110e1f;
     font-family: "Inter", sans-serif;
     font-size: 2rem; }
     header .logo:link, header .logo:visited {
       text-decoration: none;
-      color: #FFF; }
+      color: #110e1f; }
   header .main-nav-list {
     display: flex;
     gap: 3.2rem;
     list-style: none; }
   header .main-nav .nav-cta:link {
     padding: 1.2rem 2.4rem;
-    background-color: #65F3AF; }
+    background-color: #110e1f; }
   header .main-nav-link:link, header .main-nav-link:visited {
     text-decoration: none;
-    color: #FFF;
+    color: #110e1f;
     padding-bottom: 1.5rem; }
   header .main-nav-link:hover, header .main-nav-link:active {
     font-weight: bold;
-    color: #65F3AF;
-    border-bottom: 2px solid #65F3AF; }
+    color: #110e1f;
+    border-bottom: 2px solid #110e1f; }
   header .main-nav .nav-cta {
     font-weight: bold;
-    color: #2D2E32; }
+    color: #f7f7f7; }
     header .main-nav .nav-cta:hover {
       border-bottom: none; }
 
 .section-hero {
-  padding: 4.8rem 0 0 0;
-  color: white;
-  background-color: #2D2E32;
+  padding: 0 0 0 0;
+  color: #110e1f;
+  background-color: #f7f7f7;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   font-family: "Roboto Mono", monospace;
   font-weight: 400; }
   .section-hero .hero {
     display: grid;
+    grid-gap: 10rem;
     padding: 0 24rem;
     grid-template-columns: 1fr 1fr;
     align-items: center; }
@@ -87,12 +88,23 @@ header {
         .section-hero .hero-text-box .social-links a ion-icon {
           height: 3rem;
           width: 3rem;
-          color: #65F3AF; }
+          color: #110e1f; }
     .section-hero .hero .hero-image .profile-picture {
-      height: 85vh; }
+      height: 60vh;
+      box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+      animation: animate 5s ease-in-out infinite;
+      transition: all 1s ease-in-out; }
+
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; } }
 
 .section-about {
-  background-color: #25262A;
+  background-color: #eeeeee;
   padding: 9.6rem 0;
   min-height: 100vh; }
   .section-about .container {
@@ -105,7 +117,7 @@ header {
     .section-about .container .heading-secondary {
       font-size: 3.6rem;
       text-transform: uppercase;
-      color: #65F3AF;
+      color: #110e1f;
       position: relative;
       margin-bottom: 4rem; }
       .section-about .container .heading-secondary::after {
@@ -114,12 +126,12 @@ header {
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 5rem;
-        background: #65F3AF;
+        background: #413e4c;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px; }
     .section-about .container .about-paragraph {
-      color: #FFF;
+      color: #413e4c;
       line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
@@ -130,11 +142,11 @@ header {
     grid-gap: 10rem;
     padding-top: 5rem; }
     .section-about .about-content .heading-tertiary {
-      color: #FFF;
+      color: #585662;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
     .section-about .about-content-details-para {
-      color: #828387;
+      color: #585662;
       font-weight: 400;
       font-size: 1.6rem;
       margin-bottom: 1rem;
@@ -172,7 +184,7 @@ header {
         color: #027493; }
 
 .section-experience {
-  background-color: #2D2E32;
+  background-color: #f7f7f7;
   padding: 9.6rem 0; }
   .section-experience .grid {
     display: grid;
@@ -200,16 +212,16 @@ header {
         font-weight: 400;
         font-size: 2rem;
         padding: 0 0 1rem 0;
-        color: #FFF; }
+        color: #110e1f; }
       .section-experience .container .experience-container .experience-year {
         font-weight: 400;
         font-size: 2rem;
         padding: 0 0 1rem 0;
-        color: #65F3AF; }
+        color: #292635; }
       .section-experience .container .experience-container .employer {
         padding-bottom: 1rem;
         font-size: 1.6rem;
-        color: #51C28C; }
+        color: #292635; }
       .section-experience .container .experience-container .align-right {
         text-align: right; }
       .section-experience .container .experience-container .align-left {
@@ -230,7 +242,7 @@ header {
     .section-experience .container .text-left {
       text-align: left; }
     .section-experience .container .experience-description-para {
-      color: #9b9c9f;
+      color: #292635;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 1.8;
@@ -241,7 +253,7 @@ header {
       padding-right: 1rem; }
 
 .section-contact {
-  background-color: #25262A;
+  background-color: #dedede;
   padding: 4.8rem 0 12.8rem; }
   .section-contact .container {
     max-width: 140rem;
@@ -250,13 +262,13 @@ header {
     .section-contact .container .cta .heading-secondary {
       font-weight: 900;
       font-size: 3.6rem;
-      color: #65F3AF;
+      color: #110e1f;
       position: relative;
       margin: 4rem 0 1.5rem; }
     .section-contact .container .cta .cta-text {
       font-size: 1.8rem;
       line-height: 1.8;
-      color: #FFF;
+      color: #292635;
       margin-bottom: 1.8rem; }
     .section-contact .container .cta .cta-form .cta-form-input {
       width: 50%;
@@ -282,7 +294,7 @@ header {
       transition: all 0.3s;
       text-transform: uppercase; }
     .section-contact .container .cta .cta-form .btn--form {
-      background-color: #65F3AF;
-      color: #2D2E32;
+      background-color: #110e1f;
+      color: #f7f7f7;
       align-self: end;
       padding: 1.2rem; }

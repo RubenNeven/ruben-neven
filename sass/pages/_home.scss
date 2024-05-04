@@ -1,17 +1,18 @@
 
 .section-hero {
-  padding: 4.8rem 0 0 0;
-  color: white;
-  background-color: #2D2E32;
+  padding: 0 0 0 0;
+  color: #110e1f;
+  background-color: #f7f7f7;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
 
   .hero {
     display: grid;
+    grid-gap: 10rem;
     padding: 0 24rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -42,7 +43,7 @@
           ion-icon {
             height: 3rem;
             width: 3rem;
-            color: #65F3AF;
+            color: #110e1f;
           }
         }
       }
@@ -50,14 +51,30 @@
 
     .hero-image {
       .profile-picture {
-        height: 85vh;
+        height: 60vh;
+        box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+        animation: animate 5s ease-in-out infinite;
+        transition: all 1s ease-in-out;
       }
     }
   }
 }
 
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
 .section-about {
-  background-color: #25262A;
+
+  background-color: #eeeeee;
   padding: 9.6rem 0;
   min-height: 100vh;
 
@@ -75,7 +92,7 @@
     .heading-secondary {
       font-size: 3.6rem;
       text-transform: uppercase;
-      color: $color-primary-green;
+      color: #110e1f;
       position: relative;
       margin-bottom: 4rem;
 
@@ -85,7 +102,7 @@
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 5rem;
-        background: $color-primary-green;
+        background: #413e4c;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px;
@@ -93,7 +110,7 @@
     }
 
     .about-paragraph {
-      color: $color-white;
+      color: #413e4c;
       line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
@@ -109,14 +126,14 @@
     padding-top: 5rem;
 
     .heading-tertiary {
-      color: $color-white;
+      color: #585662;
       font-size: 2.8rem;
       margin-bottom: 3rem;
     }
 
     &-details {
       &-para {
-        color: $color-grey;
+        color: #585662;
         font-weight: 400;
         font-size: 1.6rem;
         margin-bottom: 1rem;
@@ -182,7 +199,7 @@
 }
 
 .section-experience {
-  background-color: #2D2E32;
+  background-color: #f7f7f7;
   padding: 9.6rem 0;
 
   .grid {
@@ -208,34 +225,34 @@
       column-gap: 2rem;
       align-self: center;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
 
-      .year-logo{
+      .year-logo {
         white-space: nowrap;
         display: flex;
         flex-direction: column;
       }
 
-      .experience-title{
+      .experience-title {
         font-weight: 400;
         font-size: 2rem;
         padding: 0 0 1rem 0;
-        color: $color-white;
+        color: #110e1f;
       }
 
       .experience-year {
         font-weight: 400;
         font-size: 2rem;
         padding: 0 0 1rem 0;
-        color: $color-primary-green;
+        color: #292635;
       }
 
       .employer {
         padding-bottom: 1rem;
         font-size: 1.6rem;
-        color: $color-secondary-green
+        color: #292635;
       }
 
       .align-right {
@@ -279,7 +296,7 @@
     .experience-description {
 
       &-para {
-        color: $color-grey-light;
+        color: #292635;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.8;
@@ -287,11 +304,11 @@
       }
     }
 
-    .description-right{
+    .description-right {
       padding-left: 1rem;
     }
 
-    .description-left{
+    .description-left {
       padding-right: 1rem;
     }
 
@@ -299,7 +316,7 @@
 }
 
 .section-contact {
-  background-color: #25262A;
+  background-color: #dedede;
   padding: 4.8rem 0 12.8rem;
 
   .container {
@@ -312,7 +329,7 @@
       .heading-secondary {
         font-weight: 900;
         font-size: 3.6rem;
-        color: $color-primary-green;
+        color: #110e1f;
         position: relative;
         margin: 4rem 0 1.5rem;
       }
@@ -320,7 +337,7 @@
       .cta-text {
         font-size: 1.8rem;
         line-height: 1.8;
-        color: $color-white;
+        color: #292635;
         margin-bottom: 1.8rem;
       }
 
@@ -355,8 +372,8 @@
         }
 
         .btn--form {
-          background-color: $color-primary-green;
-          color: $color-primary-dark;
+          background-color: #110e1f;
+          color: #f7f7f7;
           align-self: end;
           padding: 1.2rem;
         }
