@@ -4,24 +4,25 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #f7f7f7;
+  background-color: #faf9f9;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3.2rem;
   height: 7rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 1.6rem;
 
   .logo {
-    color: #110e1f;
+    color: #0B1925;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
 
     &:link, &:visited {
       text-decoration: none;
-      color: #110e1f;
+      color: #0B1925;
     }
   }
 
@@ -32,32 +33,39 @@ header {
       list-style: none;
     }
 
-    .nav-cta {
-      &:link {
-        padding: 1.2rem 2.4rem;
-        background-color: #110e1f;
-      }
-    }
     &-link {
       &:link, &:visited {
         text-decoration: none;
-        color: #110e1f;
+        color: #080809;
         padding-bottom: 1.5rem;
       }
 
+
       &:hover, &:active {
         font-weight: bold;
-        color: #110e1f;
-        border-bottom: 2px solid #110e1f;
+        background-color: transparent;
+        color: #080809;
+        border-bottom: 2px solid #080809;
       }
     }
 
     .nav-cta {
-      font-weight: bold;
-      color: #f7f7f7;
+      font-weight: 700;
+      color: white;
+      //box-shadow: 0 0 12px #33B0F9;
+      border: 2px solid transparent;
+
       &:hover {
-        border-bottom:none;
+        border-bottom: none;
+      }
+
+      &:link {
+        padding: 1.2rem 2.4rem;
+        background-color: #075AF7;
+        color: white;
       }
     }
+
+
   }
 }

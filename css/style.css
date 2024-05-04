@@ -18,47 +18,50 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #f7f7f7;
+  background-color: #faf9f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3.2rem;
   height: 7rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 1.6rem; }
   header .logo {
-    color: #110e1f;
+    color: #0B1925;
     font-family: "Inter", sans-serif;
     font-size: 2rem; }
     header .logo:link, header .logo:visited {
       text-decoration: none;
-      color: #110e1f; }
+      color: #0B1925; }
   header .main-nav-list {
     display: flex;
     gap: 3.2rem;
     list-style: none; }
-  header .main-nav .nav-cta:link {
-    padding: 1.2rem 2.4rem;
-    background-color: #110e1f; }
   header .main-nav-link:link, header .main-nav-link:visited {
     text-decoration: none;
-    color: #110e1f;
+    color: #080809;
     padding-bottom: 1.5rem; }
   header .main-nav-link:hover, header .main-nav-link:active {
     font-weight: bold;
-    color: #110e1f;
-    border-bottom: 2px solid #110e1f; }
+    background-color: transparent;
+    color: #080809;
+    border-bottom: 2px solid #080809; }
   header .main-nav .nav-cta {
-    font-weight: bold;
-    color: #f7f7f7; }
+    font-weight: 700;
+    color: white;
+    border: 2px solid transparent; }
     header .main-nav .nav-cta:hover {
       border-bottom: none; }
+    header .main-nav .nav-cta:link {
+      padding: 1.2rem 2.4rem;
+      background-color: #075AF7;
+      color: white; }
 
 .section-hero {
   padding: 0 0 0 0;
-  color: #110e1f;
-  background-color: #f7f7f7;
+  color: #0B1925;
+  background-color: #faf9f9;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -76,7 +79,7 @@ header {
       .section-hero .hero-text-box p {
         font-size: 2rem; }
       .section-hero .hero-text-box .job {
-        margin-bottom: 3.2rem; }
+        margin-bottom: 5.2rem; }
       .section-hero .hero-text-box h1 {
         padding: 1rem 0;
         font-size: 10rem;
@@ -88,10 +91,12 @@ header {
         .section-hero .hero-text-box .social-links a ion-icon {
           height: 3rem;
           width: 3rem;
-          color: #110e1f; }
+          color: #075AF7; }
     .section-hero .hero .hero-image .profile-picture {
-      height: 60vh;
-      box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+      height: 65vh;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      border: 3px solid white;
+      box-shadow: 0 0 35px rgba(7, 90, 247, 0.67);
       animation: animate 5s ease-in-out infinite;
       transition: all 1s ease-in-out; }
 
@@ -104,20 +109,22 @@ header {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; } }
 
 .section-about {
-  background-color: #eeeeee;
+  background-color: #faf9f9;
   padding: 9.6rem 0;
   min-height: 100vh; }
   .section-about .container {
     max-width: 120rem;
-    padding: 0 3.2rem;
-    margin: 0 auto; }
+    padding: 3.2rem 6.4rem;
+    margin: 0 auto;
+    background-color: #f4f3f2;
+    border-radius: 12px; }
     .section-about .container .about-title {
-      margin-bottom: 9rem;
+      margin-bottom: 3rem;
       text-align: center; }
     .section-about .container .heading-secondary {
       font-size: 3.6rem;
       text-transform: uppercase;
-      color: #110e1f;
+      color: black;
       position: relative;
       margin-bottom: 4rem; }
       .section-about .container .heading-secondary::after {
@@ -131,7 +138,7 @@ header {
         transform: translateX(-50%);
         border-radius: 5px; }
     .section-about .container .about-paragraph {
-      color: #413e4c;
+      color: black;
       line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
@@ -140,13 +147,13 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
-    padding-top: 5rem; }
+    padding-top: 1rem; }
     .section-about .about-content .heading-tertiary {
-      color: #585662;
+      color: black;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
     .section-about .about-content-details-para {
-      color: #585662;
+      color: black;
       font-weight: 400;
       font-size: 1.6rem;
       margin-bottom: 1rem;
@@ -160,8 +167,6 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center; }
-      .section-about .about-content .skills .certified {
-        color: #FFF; }
       .section-about .about-content .skills i {
         color: #FFF; }
       .section-about .about-content .skills .icon-angular {
@@ -184,7 +189,7 @@ header {
         color: #027493; }
 
 .section-experience {
-  background-color: #f7f7f7;
+  background-color: #faf9f9;
   padding: 9.6rem 0; }
   .section-experience .grid {
     display: grid;
@@ -253,7 +258,9 @@ header {
       padding-right: 1rem; }
 
 .section-contact {
-  background-color: #dedede;
+  background: linear-gradient(-45deg, #075af7, #4d9aff, #23a6d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   padding: 4.8rem 0 12.8rem; }
   .section-contact .container {
     max-width: 140rem;
@@ -262,13 +269,13 @@ header {
     .section-contact .container .cta .heading-secondary {
       font-weight: 900;
       font-size: 3.6rem;
-      color: #110e1f;
+      color: white;
       position: relative;
       margin: 4rem 0 1.5rem; }
     .section-contact .container .cta .cta-text {
       font-size: 1.8rem;
       line-height: 1.8;
-      color: #292635;
+      color: white;
       margin-bottom: 1.8rem; }
     .section-contact .container .cta .cta-form .cta-form-input {
       width: 50%;
@@ -286,7 +293,7 @@ header {
       display: inline-block;
       text-decoration: none;
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 700;
       padding: 1.6rem 3.2rem;
       border: none;
       cursor: pointer;
@@ -294,7 +301,15 @@ header {
       transition: all 0.3s;
       text-transform: uppercase; }
     .section-contact .container .cta .cta-form .btn--form {
-      background-color: #110e1f;
-      color: #f7f7f7;
+      background-color: white;
+      color: black;
       align-self: end;
-      padding: 1.2rem; }
+      padding: 1.2rem 2.4rem; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
