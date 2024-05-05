@@ -164,12 +164,12 @@ header {
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 5rem;
-        background: #413e4c;
+        background: #1b6ec2;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px; }
     .section-about .container .about-paragraph {
-      color: black;
+      color: #858c92;
       line-height: 1.6;
       font-weight: 400;
       font-size: 1.8rem;
