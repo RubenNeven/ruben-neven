@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://kit.fontawesome.com/f9e09b94d4.js" crossorigin="anonymous"></script>
@@ -40,27 +41,32 @@
     <section class="section-hero" id="home">
         <div class="hero">
             <div class="hero-text-box">
+                <div class="hero__socials">
+                    <div class="hero__social">
+                        <a href="https://www.linkedin.com/in/ruben-neven-a9792a12a/" target="_blank">
+                            <ion-icon class="logo-linkedin" name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="https://www.facebook.com/ruben.neven.5/" target="_blank">
+                            <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="https://github.com/RubenNeven" >
+                            <ion-icon class="logo-github" name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="mailto:rubenneven@gmail.com">
+                            <ion-icon class="logo-mail" name="mail-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
                 <p>Hello, I am</p>
                 <h1 style="color: #858c92; margin-bottom: 0" class="firstname">Ruben</h1>
                 <h1 style="margin-top: -3rem; padding-left: 5rem" class="lastname">Neven</h1>
                 <p class="job">A full-stack developer </p>
-                <ul class="social-links">
-                    <li>
-                        <a href="https://www.linkedin.com/in/ruben-neven-a9792a12a/" target="_blank">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/ruben.neven.5/" target="_blank">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:rubenneven@gmail.com">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
             </div>
             <div class="hero-image">
                 <img class="profile-picture" src="img/rn%20vierkant.png" alt="Profile picture Ruben Neven">
@@ -69,7 +75,7 @@
     </section>
 
     <section class="section-about" id="about">
-        <div class="container">
+        <div class="container reveal" id="about-container">
             <div class="about-title center-text">
                 <h2 class="heading-secondary">About me</h2>
                 <p class="about-paragraph">Here you will find more information about me, what I do, and my current
@@ -193,20 +199,23 @@
             <div class="cta">
                 <h2 class="heading-secondary">Contact</h2>
                 <p class="cta-text">Get in touch with me!</p>
-                <form class="cta-form" id="contact-form" action="https://public.herotofu.com/v1/a129ca80-070b-11ef-8940-81073fcea66e" method="post" accept-charset="UTF-8">
-                    <div>
-                        <input required class="cta-form-input" type="text" id="name" name="name" placeholder="Name">
-                    </div>
-                    <div>
-                        <input required class="cta-form-input" type="text" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div>
-                        <textarea required class="cta-form-input cta-form-input-textarea" id="message" name="message" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--form">
-                        Send message
-                    </button>
-                </form>
+                <div class="contact__form-container">
+                    <form class="cta-form" id="contact-form" action="https://public.herotofu.com/v1/a129ca80-070b-11ef-8940-81073fcea66e" method="post" accept-charset="UTF-8">
+                        <div class="cta__form-field">
+                            <input required class="cta-form-input" type="text" id="name" name="name" placeholder="Name">
+                        </div>
+                        <div class="cta__form-field">
+                            <input required class="cta-form-input" type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="cta__form-field">
+                            <textarea required class="cta-form-input cta-form-input-textarea" id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--form">
+                            Send message
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>

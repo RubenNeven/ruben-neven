@@ -22,3 +22,20 @@ allLinks.forEach(function (link) {
         }
     })
 })
+
+window.addEventListener('scroll', reveal)
+
+function reveal (){
+    let sectionAbout = document.getElementById('about');
+    let containerAbout = document.getElementById('about-container');
+
+    let windowHeight = window.innerHeight;
+    let revealTop = sectionAbout.getBoundingClientRect().top;
+    let revealPoint = 150;
+
+    if (revealTop < windowHeight - revealPoint ) {
+        containerAbout.classList.add('active');
+    } else {
+        containerAbout.classList.remove('active');
+    }
+}

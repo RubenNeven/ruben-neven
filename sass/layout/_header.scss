@@ -38,6 +38,7 @@ header {
         text-decoration: none;
         color: #080809;
         padding-bottom: 1.5rem;
+        letter-spacing: 1px;
       }
 
 
@@ -54,6 +55,7 @@ header {
       color: white;
       //box-shadow: 0 0 12px #33B0F9;
       border: 2px solid transparent;
+      border-radius: 5px;
 
       &:hover {
         border-bottom: none;
@@ -61,8 +63,9 @@ header {
 
       &:link {
         padding: 1.2rem 2.4rem;
-        background-color: #075AF7;
+        background-color:  #007bff;
         color: white;
+        letter-spacing: 1px;
       }
     }
 
