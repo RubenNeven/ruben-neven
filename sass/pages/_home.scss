@@ -11,7 +11,6 @@
 
   .hero {
     display: grid;
-    //grid-gap: 10rem;
     padding: 0 24rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -408,7 +407,7 @@
       .cta-text {
         font-size: 1.8rem;
         line-height: 1.8;
-        color: black;
+        color: #858c92;
         margin-bottom: 6rem;
       }
 
