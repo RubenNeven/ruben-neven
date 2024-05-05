@@ -20,11 +20,15 @@
       padding-left: 5rem;
 
       p {
-        font-size: 2rem;
+        font-size: 2.8rem;
       }
 
       .job {
         margin-bottom: 5.2rem;
+      }
+
+      .developer-type{
+        color: #594BD9;
       }
 
       h1 {
@@ -53,7 +57,7 @@
         height: 65vh;
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
         border: 3px solid white;
-        box-shadow: 0 0 35px rgba(7, 90, 247, 0.67);
+        box-shadow: 0 0 35px rgba(89, 75, 217, 0.67);
         animation: animate 5s ease-in-out infinite;
         transition: all 1s ease-in-out;
       }
@@ -65,7 +69,7 @@
       left: 0;
       transform: translateY(-50%);
       background: #fff;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
       padding: .5rem;
     }
 
@@ -173,7 +177,7 @@
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 5rem;
-        background: #1b6ec2;
+        background: #594BD9;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px;
@@ -286,9 +290,22 @@
           margin-bottom: 3.2rem;
         }
 
+        .job-title {
+          //color: #594BD9;
+        }
+
         .timeline{
           list-style: none;
           position: relative;
+
+
+          .experience-item {
+            &:hover{
+              .experience-title{
+                color: #594BD9;
+              }
+            }
+          }
 
           &-container{
             display: grid;
@@ -306,6 +323,7 @@
               font-size: 2.4rem;
               margin-bottom: 1.2rem;
             }
+
 
             .experience-para {
               font-size: 1.6rem;
@@ -396,7 +414,7 @@
           top: calc(100% + 1.5rem);
           height: 5px;
           width: 3rem;
-          background:  #1b6ec2;
+          background:  #594BD9;
           left: 50%;
           transform: translateX(-50%);
           border-radius: 5px;
@@ -455,7 +473,7 @@
         }
 
         .btn--form {
-          background-color:  #007bff;
+          background-color:  #594BD9;
           color: white;
           padding: 1.2rem 2.4rem;
           border: 2px solid transparent;

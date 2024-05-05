@@ -30,7 +30,7 @@ header {
   header .logo {
     color: #0B1925;
     font-family: "Inter", sans-serif;
-    font-size: 2rem; }
+    font-size: 2.2rem; }
     header .logo:link, header .logo:visited {
       text-decoration: none;
       color: #0B1925; }
@@ -46,8 +46,8 @@ header {
   header .main-nav-link:hover, header .main-nav-link:active {
     font-weight: bold;
     background-color: transparent;
-    color: #080809;
-    border-bottom: 2px solid #080809; }
+    color: #594BD9;
+    border-bottom: 2px solid #594BD9; }
   header .main-nav .nav-cta {
     font-weight: 700;
     color: white;
@@ -57,7 +57,7 @@ header {
       border-bottom: none; }
     header .main-nav .nav-cta:link {
       padding: 1.2rem 2.4rem;
-      background-color: #007bff;
+      background-color: #594BD9;
       color: white;
       letter-spacing: 1px; }
 
@@ -79,9 +79,11 @@ header {
     .section-hero .hero-text-box {
       padding-left: 5rem; }
       .section-hero .hero-text-box p {
-        font-size: 2rem; }
+        font-size: 2.8rem; }
       .section-hero .hero-text-box .job {
         margin-bottom: 5.2rem; }
+      .section-hero .hero-text-box .developer-type {
+        color: #594BD9; }
       .section-hero .hero-text-box h1 {
         padding: 1rem 0;
         font-size: 10rem;
@@ -98,7 +100,7 @@ header {
       height: 65vh;
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
       border: 3px solid white;
-      box-shadow: 0 0 35px rgba(7, 90, 247, 0.67);
+      box-shadow: 0 0 35px rgba(89, 75, 217, 0.67);
       animation: animate 5s ease-in-out infinite;
       transition: all 1s ease-in-out; }
     .section-hero .hero__socials {
@@ -107,7 +109,7 @@ header {
       left: 0;
       transform: translateY(-50%);
       background: #fff;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
       padding: .5rem; }
     .section-hero .hero__social {
       padding: 1rem; }
@@ -169,7 +171,7 @@ header {
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 5rem;
-        background: #1b6ec2;
+        background: #594BD9;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px; }
@@ -238,6 +240,8 @@ header {
     .section-experience .container .row .col .timeline {
       list-style: none;
       position: relative; }
+      .section-experience .container .row .col .timeline .experience-item:hover .experience-title {
+        color: #594BD9; }
       .section-experience .container .row .col .timeline-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr; }
@@ -310,7 +314,7 @@ header {
         top: calc(100% + 1.5rem);
         height: 5px;
         width: 3rem;
-        background: #1b6ec2;
+        background: #594BD9;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 5px; }
@@ -353,7 +357,7 @@ header {
       text-transform: uppercase;
       letter-spacing: 1px; }
     .section-contact .container .cta .cta-form .btn--form {
-      background-color: #007bff;
+      background-color: #594BD9;
       color: white;
       padding: 1.2rem 2.4rem;
       border: 2px solid transparent;
