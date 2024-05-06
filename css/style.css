@@ -233,6 +233,8 @@ header {
           align-items: center; }
         .section-about .container .about-content .skills i {
           color: #FFF; }
+        .section-about .container .about-content .skills .skill-icon {
+          font-size: 6rem; }
         .section-about .container .about-content .skills .icon-angular {
           color: #F54335;
           cursor: pointer; }
@@ -394,28 +396,25 @@ header {
       border: 2px solid transparent;
       border-radius: 5px; }
 
-@media (max-width: 60em) {
-  /*  .section-hero {
+@media (max-width: 85em) {
+  .section-hero .hero {
+    grid-template-columns: 1fr;
+    justify-items: center; } }
 
-      .hero {
-        grid-template-columns: 1fr;
-        justify-items: center;
-
-        &-text-box{
-          h1 {
-            font-size: 5rem;
-          }
-        }
-
-        .hero-image {
-          .profile-picture {
-            max-height: 45vh;
-          }
-        }
-      }
-    }*/ }
+@media (max-width: 75em) {
+  .section-about {
+    padding: 9.6rem 4.8rem; }
+    .section-about .container .about-content {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem; } }
 
 @media (max-width: 50em) {
+  .section-hero .hero-text-box h1 {
+    font-size: 5rem; }
+  .section-hero .hero-text-box .hero__socials {
+    display: none; }
+  .section-hero .hero .hero-image .profile-picture {
+    max-height: 35rem; }
   header .btn-mobile-nav {
     display: block; }
   header .main-nav {
@@ -446,43 +445,24 @@ header {
     display: block; }
   header.nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none; }
-  /*  .section-hero {
-      .hero {
-        &__socials {
-          display: none;
-        }
-        .hero-image {
-          .profile-picture {
-            max-height: 25vh;
-          }
-        }
-      }
-    }
+  .section-experience .container .row .col .timeline-container {
+    grid-template-columns: 1fr 2fr; }
+    .section-experience .container .row .col .timeline-container .experience-year {
+      font-size: 2rem;
+      font-weight: 600; }
+    .section-experience .container .row .col .timeline-container .experience-title {
+      font-size: 2rem; } }
 
-    .section-about {
-      .container {
-        margin: 0 2rem;
-
-        .about-content {
-          grid-template-columns: 1fr;
-          grid-gap: 3rem;
-
-          .skills {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1.8rem;
-          }
-        }
-      }
-    }
-
-    .section-experience {
-      .container {
-        .row {
-          .col {
-            .experience-title {
-              font-size: 1rem;
-            }
-          }
-        }
-      }
-    }*/ }
+@media (max-width: 30em) {
+  .section-about .container .about-content-details-para {
+    font-size: 1.2rem; }
+  .section-about .container .about-content .skills .skill-icon {
+    font-size: 4rem; }
+  .section-hero .hero {
+    padding: 0 5rem; }
+    .section-hero .hero-text-box p {
+      font-size: 2rem; }
+    .section-hero .hero .hero-image .profile-picture {
+      max-height: 25rem; }
+  .section-about .container {
+    padding: 2rem; } }

@@ -1,27 +1,48 @@
-@media (max-width: 60em) {
+@media (max-width: 85em) {
 
-  /*  .section-hero {
+  .section-hero {
+    .hero {
+      grid-template-columns: 1fr;
+      justify-items: center;
 
-      .hero {
+    }
+  }
+}
+
+@media (max-width: 75em) {
+
+  .section-about {
+    padding: 9.6rem 4.8rem;
+
+    .container {
+      .about-content {
         grid-template-columns: 1fr;
-        justify-items: center;
-
-        &-text-box{
-          h1 {
-            font-size: 5rem;
-          }
-        }
-
-        .hero-image {
-          .profile-picture {
-            max-height: 45vh;
-          }
-        }
+        grid-gap: 5rem;
       }
-    }*/
+    }
+  }
 }
 
 @media (max-width: 50em) {
+  .section-hero {
+    .hero {
+      &-text-box {
+        h1 {
+          font-size: 5rem;
+        }
+
+        .hero__socials {
+          display: none;
+        }
+      }
+
+      .hero-image {
+        .profile-picture {
+          max-height: 35rem;
+        }
+      }
+    }
+  }
 
   header {
     .btn-mobile-nav {
@@ -61,64 +82,98 @@
 
 
     &.nav-open {
-      .main-nav{
+      .main-nav {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
       }
 
-      .icon-mobile-nav{
-        &[name="close-outline"]{
+      .icon-mobile-nav {
+        &[name="close-outline"] {
           display: block;
         }
-        &[name="menu-outline"]{
+
+        &[name="menu-outline"] {
           display: none;
         }
       }
-
-
     }
   }
 
-  /*  .section-hero {
-      .hero {
-        &__socials {
-          display: none;
-        }
-        .hero-image {
-          .profile-picture {
-            max-height: 25vh;
-          }
-        }
-      }
-    }
+  .section-experience {
+    .container {
+      .row {
+        .col {
+          .timeline {
+            &-container {
+              grid-template-columns: 1fr 2fr;
 
-    .section-about {
-      .container {
-        margin: 0 2rem;
+              .experience-year {
+                font-size: 2rem;
+                font-weight: 600;
+              }
 
-        .about-content {
-          grid-template-columns: 1fr;
-          grid-gap: 3rem;
-
-          .skills {
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1.8rem;
-          }
-        }
-      }
-    }
-
-    .section-experience {
-      .container {
-        .row {
-          .col {
-            .experience-title {
-              font-size: 1rem;
+              .experience-title {
+                font-size: 2rem;
+              }
             }
           }
         }
       }
-    }*/
+    }
+  }
+
 }
 
+@media (max-width: 30em) {
+
+  .section-about {
+    .container {
+      .about-content {
+
+        &-details {
+          &-para {
+            font-size: 1.2rem;
+          }
+        }
+
+        .skills {
+
+          .skill-icon{
+            font-size: 4rem;
+          }
+
+        }
+
+      }
+
+    }
+  }
+
+  .section-hero {
+    .hero {
+      padding: 0 5rem;
+
+      &-text-box {
+        p {
+          font-size: 2rem;
+        }
+      }
+
+
+      .hero-image {
+        .profile-picture {
+          max-height: 25rem;
+        }
+      }
+    }
+  }
+
+  .section-about {
+    .container {
+      padding: 2rem;
+
+    }
+  }
+
+}
