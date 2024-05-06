@@ -6,6 +6,7 @@ header {
   z-index: 1000;
   background-color: #faf9f9;
 
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +15,25 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.6rem;
+
+  .btn-mobile-nav{
+    z-index: 9999;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    .icon-mobile-nav{
+      color: #0B1925;
+      height: 4.8rem;
+      width: 4.8rem;
+
+      &[name="close-outline"]{
+        display: none;
+      }
+    }
+
+
+  }
 
   .logo {
     color: #0B1925;
@@ -43,7 +63,7 @@ header {
 
 
       &:hover, &:active {
-        font-weight: bold;
+        font-weight: 900;
         background-color: transparent;
         color: #594BD9;
         border-bottom: 2px solid #594BD9;

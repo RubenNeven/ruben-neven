@@ -10,13 +10,13 @@ body {
   //font-family: "Roboto Mono", monospace;
   //font-family: "Open Sans", sans-serif;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
-
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
 html {
   font-size: 62.5%;
-  //scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 

@@ -18,7 +18,7 @@ allLinks.forEach(function (link) {
         }
 
         if (link.classList.contains('main-nav-link')){
-            //headerEl.classList.toggle("nav-open");
+            headerEl.classList.toggle("nav-open");
         }
     })
 })
@@ -39,3 +39,10 @@ function reveal (){
         containerAbout.classList.remove('active');
     }
 }
+
+const btnNav = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+btnNav.addEventListener('click', function () {
+    headerEl.classList.toggle('nav-open');
+})

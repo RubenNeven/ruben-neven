@@ -7,10 +7,12 @@
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 700; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow-x: hidden; }
 
 header {
   position: fixed;
@@ -27,6 +29,18 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.6rem; }
+  header .btn-mobile-nav {
+    z-index: 9999;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none; }
+    header .btn-mobile-nav .icon-mobile-nav {
+      color: #0B1925;
+      height: 4.8rem;
+      width: 4.8rem; }
+      header .btn-mobile-nav .icon-mobile-nav[name="close-outline"] {
+        display: none; }
   header .logo {
     color: #0B1925;
     font-family: "Inter", sans-serif;
@@ -44,7 +58,7 @@ header {
     padding-bottom: 1.5rem;
     letter-spacing: 1px; }
   header .main-nav-link:hover, header .main-nav-link:active {
-    font-weight: bold;
+    font-weight: 900;
     background-color: transparent;
     color: #594BD9;
     border-bottom: 2px solid #594BD9; }
@@ -83,12 +97,18 @@ header {
         font-size: 2.8rem; }
       .section-hero .hero-text-box .job {
         margin-bottom: 5.2rem; }
-      .section-hero .hero-text-box .developer-type {
-        color: #594BD9; }
       .section-hero .hero-text-box h1 {
         padding: 1rem 0;
         font-size: 10rem;
         line-height: 1; }
+      .section-hero .hero-text-box .firstname {
+        color: #858c92;
+        margin-bottom: 0; }
+      .section-hero .hero-text-box .lastname {
+        margin-top: -3rem;
+        padding-left: 5rem; }
+      .section-hero .hero-text-box .developer-type {
+        color: #594BD9; }
       .section-hero .hero-text-box .social-links {
         display: flex;
         list-style: none;
@@ -97,13 +117,18 @@ header {
           height: 3rem;
           width: 3rem;
           color: #075AF7; }
-    .section-hero .hero .hero-image .profile-picture {
-      height: 65vh;
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-      border: 3px solid white;
-      box-shadow: 0 0 35px rgba(89, 75, 217, 0.67);
-      animation: animate 5s ease-in-out infinite;
-      transition: all 1s ease-in-out; }
+    .section-hero .hero .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-hero .hero .hero-image .profile-picture {
+        justify-content: center;
+        max-height: 45rem;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border: 3px solid white;
+        box-shadow: 0 0 35px rgba(89, 75, 217, 0.67);
+        animation: animate 5s ease-in-out infinite;
+        transition: all 1s ease-in-out; }
     .section-hero .hero__socials {
       position: absolute;
       top: 50%;
@@ -182,52 +207,52 @@ header {
       font-weight: 400;
       font-size: 1.8rem;
       padding: 0 3.2rem; }
-  .section-about .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
-    padding-top: 1rem; }
-    .section-about .about-content .heading-tertiary {
-      color: black;
-      font-size: 2.8rem;
-      margin-bottom: 3rem; }
-    .section-about .about-content-details-para {
-      color: black;
-      font-weight: 400;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      line-height: 1.8;
-      text-align: justify; }
-    .section-about .about-content .skills {
+    .section-about .container .about-content {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 3.2rem; }
-      .section-about .about-content .skills .skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-      .section-about .about-content .skills i {
-        color: #FFF; }
-      .section-about .about-content .skills .icon-angular {
-        color: #F54335;
-        cursor: pointer; }
-      .section-about .about-content .skills .icon-aws {
-        color: #FF9900;
-        cursor: pointer; }
-      .section-about .about-content .skills .icon-html {
-        color: #E44D26; }
-      .section-about .about-content .skills .icon-css {
-        color: #24ABE0; }
-      .section-about .about-content .skills .icon-js {
-        color: #F7DF1E; }
-      .section-about .about-content .skills .icon-git {
-        color: #F05033; }
-      .section-about .about-content .skills .icon-node {
-        color: #8BC500; }
-      .section-about .about-content .skills .icon-java {
-        color: #027493; }
-      .section-about .about-content .skills .icon-sass {
-        color: #CB6B9B; }
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10rem;
+      padding-top: 1rem; }
+      .section-about .container .about-content .heading-tertiary {
+        color: black;
+        font-size: 2.8rem;
+        margin-bottom: 3rem; }
+      .section-about .container .about-content-details-para {
+        color: black;
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        text-align: justify; }
+      .section-about .container .about-content .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3.2rem; }
+        .section-about .container .about-content .skills .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+        .section-about .container .about-content .skills i {
+          color: #FFF; }
+        .section-about .container .about-content .skills .icon-angular {
+          color: #F54335;
+          cursor: pointer; }
+        .section-about .container .about-content .skills .icon-aws {
+          color: #FF9900;
+          cursor: pointer; }
+        .section-about .container .about-content .skills .icon-html {
+          color: #E44D26; }
+        .section-about .container .about-content .skills .icon-css {
+          color: #24ABE0; }
+        .section-about .container .about-content .skills .icon-js {
+          color: #F7DF1E; }
+        .section-about .container .about-content .skills .icon-git {
+          color: #F05033; }
+        .section-about .container .about-content .skills .icon-node {
+          color: #8BC500; }
+        .section-about .container .about-content .skills .icon-java {
+          color: #027493; }
+        .section-about .container .about-content .skills .icon-sass {
+          color: #CB6B9B; }
 
 .section-experience {
   background-color: #faf9f9;
@@ -368,3 +393,96 @@ header {
       padding: 1.2rem 2.4rem;
       border: 2px solid transparent;
       border-radius: 5px; }
+
+@media (max-width: 60em) {
+  /*  .section-hero {
+
+      .hero {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        &-text-box{
+          h1 {
+            font-size: 5rem;
+          }
+        }
+
+        .hero-image {
+          .profile-picture {
+            max-height: 45vh;
+          }
+        }
+      }
+    }*/ }
+
+@media (max-width: 50em) {
+  header .btn-mobile-nav {
+    display: block; }
+  header .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 1.5s; }
+    header .main-nav-list {
+      flex-direction: column;
+      gap: 4.8rem;
+      align-items: center; }
+    header .main-nav-link:link, header .main-nav-link:visited {
+      font-size: 3rem; }
+  header.nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible; }
+  header.nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block; }
+  header.nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none; }
+  /*  .section-hero {
+      .hero {
+        &__socials {
+          display: none;
+        }
+        .hero-image {
+          .profile-picture {
+            max-height: 25vh;
+          }
+        }
+      }
+    }
+
+    .section-about {
+      .container {
+        margin: 0 2rem;
+
+        .about-content {
+          grid-template-columns: 1fr;
+          grid-gap: 3rem;
+
+          .skills {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.8rem;
+          }
+        }
+      }
+    }
+
+    .section-experience {
+      .container {
+        .row {
+          .col {
+            .experience-title {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }*/ }
