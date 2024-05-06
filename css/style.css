@@ -64,7 +64,8 @@ header {
 .section-hero {
   padding: 0 0 0 0;
   color: #0B1925;
-  background-color: #faf9f9;
+  background-image: url("/img/bg-section-hero.png");
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -225,6 +226,8 @@ header {
         color: #8BC500; }
       .section-about .about-content .skills .icon-java {
         color: #027493; }
+      .section-about .about-content .skills .icon-sass {
+        color: #CB6B9B; }
 
 .section-experience {
   background-color: #faf9f9;
@@ -242,6 +245,8 @@ header {
       position: relative; }
       .section-experience .container .row .col .timeline .experience-item:hover .experience-title {
         color: #594BD9; }
+      .section-experience .container .row .col .timeline .experience-item:hover .experience-year {
+        color: #6e7276; }
       .section-experience .container .row .col .timeline-container {
         display: grid;
         grid-template-columns: 0.5fr 2fr; }
@@ -293,7 +298,8 @@ header {
           z-index: 400; }
 
 .section-contact {
-  background-color: #faf9f9;
+  background-image: url("/img/bg-section-about.png");
+  background-size: cover;
   padding: 4.8rem 0 12.8rem; }
   .section-contact .container {
     max-width: 140rem;
