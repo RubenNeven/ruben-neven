@@ -465,4 +465,8 @@ header {
     .section-hero .hero .hero-image .profile-picture {
       max-height: 25rem; }
   .section-about .container {
-    padding: 2rem; } }
+    padding: 2rem; }
+  .section-experience .container .row .col .timeline-container {
+    grid-template-columns: 1fr 2fr; }
+    .section-experience .container .row .col .timeline-container .experience-para {
+      text-align: left; } }
