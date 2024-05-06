@@ -1,4 +1,5 @@
 const allLinks = document.querySelectorAll('a:link');
+const socialLinks = document.querySelectorAll('.social-link');
 
 allLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -46,3 +47,20 @@ const headerEl = document.querySelector('.header');
 btnNav.addEventListener('click', function () {
     headerEl.classList.toggle('nav-open');
 })
+
+function openLink(event) {
+    // Voorkom het standaardgedrag van de link (navigeren naar een andere pagina)
+    event.preventDefault();
+
+    // Haal de href van de link op
+    const href = event.currentTarget.getAttribute('href');
+
+    // Open de link in een nieuw venster/tabblad
+    window.open(href, '_blank');
+}
+
+
+
+socialLinks.forEach(function(link) {
+    link.addEventListener('click', openLink);
+});
