@@ -21,6 +21,19 @@
       }
     }
   }
+
+
+  .section-contact {
+    .container {
+      .cta {
+        .cta-form {
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 50em) {
@@ -177,7 +190,6 @@
           .timeline {
             &-container {
               grid-template-columns: 1fr 2fr;
-
               .experience-para {
                 text-align: left;
                 font-size: 1.4rem;
@@ -188,5 +200,6 @@
       }
     }
   }
+
 
 }

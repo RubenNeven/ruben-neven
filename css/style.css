@@ -383,7 +383,6 @@ header {
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 700;
-      padding: 1.6rem 3.2rem;
       border: none;
       cursor: pointer;
       font-family: inherit;
@@ -394,7 +393,6 @@ header {
       background-color: #594BD9;
       color: white;
       padding: 1.2rem 2.4rem;
-      border: 2px solid transparent;
       border-radius: 5px; }
 
 footer .main-footer__low {
@@ -412,7 +410,9 @@ footer .main-footer__low {
     padding: 9.6rem 4.8rem; }
     .section-about .container .about-content {
       grid-template-columns: 1fr;
-      grid-gap: 5rem; } }
+      grid-gap: 5rem; }
+  .section-contact .container .cta .cta-form .btn {
+    width: 100%; } }
 
 @media (max-width: 50em) {
   .section-hero .hero-text-box {
