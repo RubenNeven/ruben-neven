@@ -42,6 +42,7 @@
       &-text-box {
         padding-left: 0;
         text-align: center;
+
         h1 {
           font-size: 5rem;
         }
@@ -153,7 +154,7 @@
         }
 
         .skills {
-          .skill-icon{
+          .skill-icon {
             font-size: 4rem;
           }
         }
@@ -190,6 +191,7 @@
           .timeline {
             &-container {
               grid-template-columns: 1fr 2fr;
+
               .experience-para {
                 text-align: left;
                 font-size: 1.4rem;
@@ -200,6 +202,24 @@
       }
     }
   }
+
+  .section-contact {
+    .container {
+      .cta {
+
+
+        .cta-text {
+          color: #282a2c;
+        }
+
+        .contact__form-container {
+          padding: 2rem;
+        }
+
+      }
+    }
+  }
+
 
 
 }

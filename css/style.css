@@ -479,4 +479,8 @@ footer .main-footer__low {
     grid-template-columns: 1fr 2fr; }
     .section-experience .container .row .col .timeline-container .experience-para {
       text-align: left;
-      font-size: 1.4rem; } }
+      font-size: 1.4rem; }
+  .section-contact .container .cta .cta-text {
+    color: #282a2c; }
+  .section-contact .container .cta .contact__form-container {
+    padding: 2rem; } }
