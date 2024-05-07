@@ -1,5 +1,6 @@
 const allLinks = document.querySelectorAll('a:link');
 const socialLinks = document.querySelectorAll('.social-link');
+const skillLinks = document.querySelectorAll('.skill-link');
 
 allLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -62,5 +63,9 @@ function openLink(event) {
 
 
 socialLinks.forEach(function(link) {
+    link.addEventListener('click', openLink);
+});
+
+skillLinks.forEach(function(link) {
     link.addEventListener('click', openLink);
 });
