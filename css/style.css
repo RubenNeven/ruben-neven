@@ -12,7 +12,8 @@ body {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #faf9f9; }
 
 header {
   position: fixed;
@@ -395,6 +396,11 @@ header {
       padding: 1.2rem 2.4rem;
       border: 2px solid transparent;
       border-radius: 5px; }
+
+footer .main-footer__low {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 1.2rem; }
 
 @media (max-width: 85em) {
   .section-hero .hero {
