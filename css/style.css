@@ -49,6 +49,8 @@ header {
     header .logo:link, header .logo:visited {
       text-decoration: none;
       color: #0B1925; }
+    header .logo-firstname {
+      color: #858c92; }
   header .main-nav-list {
     display: flex;
     gap: 3.2rem;
