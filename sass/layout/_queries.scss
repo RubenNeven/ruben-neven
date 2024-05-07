@@ -2,12 +2,14 @@
 
   .section-hero {
     .hero {
-      grid-template-columns: 1fr;
-      justify-items: center;
+/*      grid-template-columns: 1fr;
+      justify-items: center;*/
 
     }
   }
 }
+
+
 
 @media (max-width: 75em) {
 
@@ -36,16 +38,12 @@
   }
 }
 
-@media (max-width: 50em) {
+@media (max-width: 60em) {
   .section-hero {
     .hero {
-      &-text-box {
-        padding-left: 0;
-        text-align: center;
+      grid-gap: 5rem;
 
-        h1 {
-          font-size: 5rem;
-        }
+      &-text-box {
 
         .hero__socials {
           display: none;
@@ -55,6 +53,30 @@
       .hero-image {
         .profile-picture {
           max-height: 35rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 50em) {
+  .section-hero {
+    .hero {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      &-text-box {
+        padding-left: 0;
+        text-align: center;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+      }
+
+      .hero-image {
+        .profile-picture {
+          max-height: 25rem;
         }
       }
     }

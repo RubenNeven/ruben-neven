@@ -90,6 +90,7 @@ header {
   font-weight: 400; }
   .section-hero .hero {
     display: grid;
+    grid-gap: 2rem;
     padding: 0 24rem;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -404,8 +405,8 @@ footer .main-footer__low {
 
 @media (max-width: 85em) {
   .section-hero .hero {
-    grid-template-columns: 1fr;
-    justify-items: center; } }
+    /*      grid-template-columns: 1fr;
+      justify-items: center;*/ } }
 
 @media (max-width: 75em) {
   .section-about {
@@ -416,16 +417,25 @@ footer .main-footer__low {
   .section-contact .container .cta .cta-form .btn {
     width: 100%; } }
 
-@media (max-width: 50em) {
-  .section-hero .hero-text-box {
-    padding-left: 0;
-    text-align: center; }
-    .section-hero .hero-text-box h1 {
-      font-size: 5rem; }
+@media (max-width: 60em) {
+  .section-hero .hero {
+    grid-gap: 5rem; }
     .section-hero .hero-text-box .hero__socials {
       display: none; }
-  .section-hero .hero .hero-image .profile-picture {
-    max-height: 35rem; }
+    .section-hero .hero .hero-image .profile-picture {
+      max-height: 35rem; } }
+
+@media (max-width: 50em) {
+  .section-hero .hero {
+    grid-template-columns: 1fr;
+    justify-items: center; }
+    .section-hero .hero-text-box {
+      padding-left: 0;
+      text-align: center; }
+      .section-hero .hero-text-box h1 {
+        font-size: 5rem; }
+    .section-hero .hero .hero-image .profile-picture {
+      max-height: 25rem; }
   header .btn-mobile-nav {
     display: block; }
   header .main-nav {
