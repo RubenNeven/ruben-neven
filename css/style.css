@@ -448,6 +448,8 @@ footer .main-footer__low {
       align-items: center; }
     header .main-nav-link:link, header .main-nav-link:visited {
       font-size: 3rem; }
+    header .main-nav-link:hover, header .main-nav-link:active {
+      border-bottom: none; }
   header.nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;

@@ -65,7 +65,6 @@
       display: block;
     }
 
-
     .main-nav {
       background-color: rgba(255, 255, 255, 0.97);
       position: absolute;
@@ -93,9 +92,11 @@
         &:link, &:visited {
           font-size: 3rem;
         }
+        &:hover, &:active {
+          border-bottom: none;
+        }
       }
     }
-
 
     &.nav-open {
       .main-nav {
