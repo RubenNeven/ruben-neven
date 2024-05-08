@@ -1,3 +1,4 @@
+
 const allLinks = document.querySelectorAll('a:link');
 const socialLinks = document.querySelectorAll('.social-link');
 const skillLinks = document.querySelectorAll('.skill-link');

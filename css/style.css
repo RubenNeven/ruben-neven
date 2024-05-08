@@ -403,13 +403,27 @@ footer .main-footer__low {
   padding: 4rem 0;
   font-size: 1.2rem; }
 
-@media (-webkit-device-pixel-ratio: 1.25) {
-  * {
-    zoom: 0.8; } }
+@media (-webkit-device-pixel-ratio: 2) {
+  .section-hero .hero-text-box {
+    padding-left: 0; }
+    .section-hero .hero-text-box h1 {
+      font-size: 4rem; }
+  .section-hero .hero .hero-image .profile-picture {
+    max-height: 20rem; } }
 
-@media (-webkit-device-pixel-ratio: 1.25) {
-  * {
-    zoom: 0.8; } }
+@media (-webkit-device-pixel-ratio: 1.75) {
+  .section-hero .hero-text-box {
+    padding-left: 0; }
+    .section-hero .hero-text-box h1 {
+      font-size: 4rem; }
+  .section-hero .hero .hero-image .profile-picture {
+    max-height: 25rem; } }
+
+@media (-webkit-device-pixel-ratio: 1.5) {
+  .section-hero .hero-text-box h1 {
+    font-size: 8rem; }
+  .section-hero .hero .hero-image .profile-picture {
+    max-height: 35rem; } }
 
 @media (max-width: 85em) {
   .section-hero .hero {
@@ -485,12 +499,14 @@ footer .main-footer__low {
       font-size: 2rem; } }
 
 @media (max-width: 30em) {
-  .section-about .container {
-    padding: 2rem; }
-    .section-about .container .about-content-details-para {
-      font-size: 1.4rem; }
-    .section-about .container .about-content .skills .skill-icon {
-      font-size: 4rem; }
+  .section-about {
+    padding: 4.8rem 2.4rem; }
+    .section-about .container {
+      padding: 2rem; }
+      .section-about .container .about-content-details-para {
+        font-size: 1.4rem; }
+      .section-about .container .about-content .skills .skill-icon {
+        font-size: 4rem; }
   .section-hero .hero {
     padding: 0 5rem; }
     .section-hero .hero-text-box p {
