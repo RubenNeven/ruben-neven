@@ -1,3 +1,15 @@
+@media (-webkit-device-pixel-ratio: 1.25) {
+  * {
+    zoom: 0.6;
+  }
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+  * {
+    zoom: 0.8;
+  }
+}
+
 @media (max-width: 85em) {
 
   .section-hero {
